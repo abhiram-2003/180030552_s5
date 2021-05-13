@@ -3,7 +3,6 @@ import java.io.*;
 import java.util.*;
 public class P27 {
 	  public static void main(String[] args) {
-	    // TODO Auto-generated method stub
 	     int[] n = {10,3,6,1,2,7,9};
 	     int sum = 0,d=0;    
 	     for(int i=0;i<n.length-1;i++){
