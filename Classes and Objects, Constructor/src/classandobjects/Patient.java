@@ -1,20 +1,19 @@
 package classandobjects;
-import java.io.*;
 import java.util.*;
+import java.util.Scanner;
 public class Patient {
-	  String patientname;
-	  double height;
-	  double weight;
-	  Patient(double pheight,double pweight){
-	    height =pheight;
-	    weight = pweight;
-	  }
-	  double Bmi() {
-	    double value = ((weight/(height*height))*703);
-	    return value;
-	  }    
-	  public static void main(String[] args) {
-	    Patient p = new Patient(60,65.5);
-	    System.out.println(p.Bmi());
-	  }   
-	}
+	 public static void main(String[] args) {
+	        BMICalc();
+	    }
+	    public static void BMICalc() {
+	        Scanner keyboard = new Scanner(System.in);
+	        double height, weight, BMI;
+	        System.out.print("Your height in m: ");
+	        height = keyboard.nextDouble();
+	        System.out.print("Your weight in kg: ");
+	        weight = keyboard.nextDouble();
+	        BMI = weight / (height * height);
+	        System.out.println();
+	        System.out.println("Your BMI is " + BMI);
+	    }
+}
