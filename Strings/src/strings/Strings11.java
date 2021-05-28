@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.*;
 public class Strings11 {
 	public static void main(String[] args) {
-		String str1 = "abcXY123XYijk"; // "XY123XY"
+		String str1 = "abcXY123XYijk"; 
 		String str2 = "XY";
 		StringBuffer sb=new StringBuffer();
 		while (str1.indexOf(str2) != -1) {	
